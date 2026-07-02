@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaches Around Baler - Explore Baler</title>
+    
+    <link rel="stylesheet" href="beach.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/400397960_122111206466094813_2795361231977891394_n.jpg?stp=dst-jpg_tt6&cstp=mx2000x2000&ctp=s2000x2000&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGIc5BQZNAqfcQ_gI-cC7ng8PkPmmhRaz3w-Q-aaFFrPezbVxT387_YtpQTirz4Mc0HDEi_3p0qoVbsRdvrwjar&_nc_ohc=5ZNuHsWaCtkQ7kNvwHmn_wX&_nc_oc=AdoZPGYs1Ah3QCjjAbyDkttmVMQgt_mzudisWF4o-jaWhoG0lq8rf8327N1Oa8G5LWU&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=3YABk8lfOsap8uT9MRf_SQ&_nc_ss=7c2a8&oh=00_AQCffaV6bxvuN7Bj7sz8ZQ7cZAMe8bAdDNzM3Yhc-ZzCwA&oe=6A4AAE8D" alt="Explore Baler Logo" class="nav-logo-img">
+            <div class="logo-text-group">
+                <h2 class="logo">Explore<span>Baler</span></h2>
+                <span class="logo-subtitle">The Birthplace of Philippine Surfing</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#destination">Destinations</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-section">
+        <h2>Beaches Around Baler</h2>
+        <p class="subtitle">Explore the pristine shores and famous surf breaks of Aurora</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://surl.li/tsqysh" alt="Sabang Beach">
+                <h3>Sabang Beach</h3>
+                <p>The premier surfing hub with soft grey sands, active rollers, and vibrant accommodation boardwalks right by the sea.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://surl.li/tsqysh" alt="Diguisit Beach">
+                <h3>Diguisit Beach</h3>
+                <p>Famous for its dramatic, rugged rock formations breaking through crashing coastal tides, perfect for landscape photography.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://surl.li/tsqysh" alt="Cemento Beach">
+                <h3>Cemento Beach</h3>
+                <p>Home to challenging break waves that attract advanced local and international surf experts seeking high-intensity tubes.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector("nav");
+            const navLinks = document.querySelector(".nav-links");
+
+            const toggleButton = document.createElement("div");
+            toggleButton.classList.add("menu-toggle");
+            toggleButton.innerHTML = "<span></span><span></span><span></span>";
+            nav.appendChild(toggleButton);
+
+            toggleButton.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                toggleButton.classList.toggle("open");
+            });
+        });
+    </script>
+</body>
+</html>
